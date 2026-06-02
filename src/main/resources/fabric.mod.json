@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "voidling",
+	"version": "${version}",
+	"name": "Voidling",
+	"description": "Voidling — an ancient creature born of the Void, drawn to lost treasures and bound by instinct to follow the one who rescued it from an eternity of loneliness beneath the world...",
+	"authors": [
+		"copen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/voidling/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.copen.voidling.Voidling"
+		],
+		"fabric-datagen": [
+			"net.copen.voidling.VoidlingDataGenerator"
+		],
+        "client": [
+          "net.copen.voidling.VoidlingClient"
+        ]
+	},
+	"mixins": [
+		"voidling.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
